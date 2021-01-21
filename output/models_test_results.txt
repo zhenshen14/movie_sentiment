@@ -1,0 +1,106 @@
+====== freq vector type ======
+-- Train data preparation --
+Cleaning from service words...
+neutral: 1000/6920 docs processed
+bad: 1000/6920 docs processed
+good: 1000/6920 docs processed
+neutral: 2000/6920 docs processed
+bad: 2000/6920 docs processed
+good: 2000/6920 docs processed
+neutral: 3000/6920 docs processed
+bad: 3000/6920 docs processed
+good: 3000/6920 docs processed
+neutral: 4000/6920 docs processed
+good: 4000/6920 docs processed
+bad: 4000/6920 docs processed
+neutral: 5000/6920 docs processed
+good: 5000/6920 docs processed
+bad: 5000/6920 docs processed
+neutral: 6000/6920 docs processed
+good: 6000/6920 docs processed
+bad: 6000/6920 docs processed
+Important words were chosen.
+Vectorization...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20760/20760 [25:01<00:00, 13.82it/s]
+Train data is prepared.
+-- Test data preparation --
+Cleaning from service words...
+good: 1000/1776 docs processed
+neutral: 1000/1776 docs processed
+bad: 1000/1776 docs processed
+Vectorization...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5328/5328 [06:22<00:00, 13.93it/s]
+Test data is prepared.
+--- MultinomialNB ---
+Train time:  21.0062
+Test time:  2.3592342342342344e-05
+Accuracy:  0.5569
+
+--- DecisionTreeClassifier ---
+Train time:  44.1543
+Test time:  1.9913663663663664e-05
+Accuracy:  0.4161
+
+--- LinearSVC ---
+Train time:  23.164
+Test time:  7.901651651651652e-05
+Accuracy:  0.5539
+
+--- MLPClassifier ---
+Train time:  1431.4206
+Test time:  0.000407789039039039
+Accuracy:  0.4942
+
+====== tfidf vector type ======
+-- Train data preparation --
+Cleaning from service words...
+neutral: 1000/6920 docs processed
+bad: 1000/6920 docs processed
+good: 1000/6920 docs processed
+neutral: 2000/6920 docs processed
+bad: 2000/6920 docs processed
+good: 2000/6920 docs processed
+neutral: 3000/6920 docs processed
+bad: 3000/6920 docs processed
+good: 3000/6920 docs processed
+neutral: 4000/6920 docs processed
+bad: 4000/6920 docs processed
+good: 4000/6920 docs processed
+neutral: 5000/6920 docs processed
+good: 5000/6920 docs processed
+bad: 5000/6920 docs processed
+neutral: 6000/6920 docs processed
+good: 6000/6920 docs processed
+bad: 6000/6920 docs processed
+Important words were chosen.
+Vectorization...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20760/20760 [24:37<00:00, 14.05it/s]
+Train data is prepared.
+-- Test data preparation --
+Cleaning from service words...
+neutral: 1000/1776 docs processed
+bad: 1000/1776 docs processed
+good: 1000/1776 docs processed
+Vectorization...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5328/5328 [06:48<00:00, 13.04it/s]
+Test data is prepared.
+--- MultinomialNB ---
+Train time:  1.0377
+Test time:  2.2897897897897897e-05
+Accuracy:  0.5477
+
+--- DecisionTreeClassifier ---
+Train time:  43.6378
+Test time:  3.6824324324324326e-05
+Accuracy:  0.3958
+
+--- LinearSVC ---
+Train time:  3.8327
+Test time:  9.690315315315315e-05
+Accuracy:  0.5599
+
+--- MLPClassifier ---
+Train time:  4565.9528
+Test time:  0.0030890765765765765
+Accuracy:  0.4831
+

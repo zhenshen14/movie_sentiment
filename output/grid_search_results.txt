@@ -1,0 +1,153 @@
+====== freq vector type ======
+-- Train data preparation --
+Cleaning from service words...
+Important words were chosen.
+Vectorization...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [02:09<00:00, 16.16it/s]
+Train data is prepared.
+-- Test data preparation --
+Cleaning from service words...
+Vectorization...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 531/531 [00:32<00:00, 16.50it/s]
+Validation data is prepared.
+
+-- Choose for MultinomialNB --
+alpha 0.1: 0.516
+alpha 0.2: 0.5198
+alpha 0.5: 0.533
+alpha 0.7: 0.5367
+alpha 1.0: 0.5405
+alpha 1.5: 0.5405
+alpha 2.0: 0.5405
+
+
+-- Choose for LinearSVC --
+stop: 0.001, reg: 0.0001, loss: squared_hinge    score: 0.5687
+stop: 0.001, reg: 0.001, loss: squared_hinge    score: 0.5518
+stop: 0.001, reg: 0.01, loss: squared_hinge    score: 0.548
+stop: 0.001, reg: 0.1, loss: squared_hinge    score: 0.5009
+stop: 0.001, reg: 0.5, loss: squared_hinge    score: 0.4991
+stop: 0.0001, reg: 0.0001, loss: squared_hinge    score: 0.5687
+stop: 0.0001, reg: 0.001, loss: squared_hinge    score: 0.5518
+stop: 0.0001, reg: 0.01, loss: squared_hinge    score: 0.548
+stop: 0.0001, reg: 0.1, loss: squared_hinge    score: 0.5009
+stop: 0.0001, reg: 0.5, loss: squared_hinge    score: 0.4991
+stop: 0.001, reg: 0.0001, loss: hinge    score: 0.533
+stop: 0.001, reg: 0.001, loss: hinge    score: 0.5593
+stop: 0.001, reg: 0.01, loss: hinge    score: 0.548
+stop: 0.001, reg: 0.1, loss: hinge    score: 0.5104
+stop: 0.001, reg: 0.5, loss: hinge    score: 0.4972
+stop: 0.0001, reg: 0.0001, loss: hinge    score: 0.533
+stop: 0.0001, reg: 0.001, loss: hinge    score: 0.5593
+stop: 0.0001, reg: 0.01, loss: hinge    score: 0.548
+stop: 0.0001, reg: 0.1, loss: hinge    score: 0.5104
+stop: 0.0001, reg: 0.5, loss: hinge    score: 0.4972
+
+
+-- Choose for DecisionTreeClassifier --
+crit: gini, depth: 30, leaf: 1,     score: 0.435
+crit: gini, depth: 30, leaf: 2,     score: 0.4105
+crit: gini, depth: 50, leaf: 1,     score: 0.4218
+crit: gini, depth: 50, leaf: 2,     score: 0.4143
+crit: gini, depth: 100, leaf: 1,     score: 0.4124
+crit: gini, depth: 100, leaf: 2,     score: 0.4294
+crit: gini, depth: 200, leaf: 1,     score: 0.4124
+crit: gini, depth: 200, leaf: 2,     score: 0.4294
+crit: entropy, depth: 30, leaf: 1,     score: 0.3936
+crit: entropy, depth: 30, leaf: 2,     score: 0.3974
+crit: entropy, depth: 50, leaf: 1,     score: 0.4124
+crit: entropy, depth: 50, leaf: 2,     score: 0.3917
+crit: entropy, depth: 100, leaf: 1,     score: 0.4124
+crit: entropy, depth: 100, leaf: 2,     score: 0.3917
+crit: entropy, depth: 200, leaf: 1,     score: 0.4124
+crit: entropy, depth: 200, leaf: 2,     score: 0.3917
+
+
+-- Choose for MLPClassifier --
+layer: (2000, 400), alpha: 1e-06,   score: 0.5217
+layer: (2000, 400), alpha: 1e-05,   score: 0.5198
+layer: (2000, 400), alpha: 0.0001,   score: 0.5198
+layer: (1000, 100), alpha: 1e-06,   score: 0.5461
+layer: (1000, 100), alpha: 1e-05,   score: 0.5424
+layer: (1000, 100), alpha: 0.0001,   score: 0.5518
+layer: (2000, 400, 50), alpha: 1e-06,   score: 0.5235
+layer: (2000, 400, 50), alpha: 1e-05,   score: 0.5273
+layer: (2000, 400, 50), alpha: 0.0001,   score: 0.5386
+
+
+====== tfidf vector type ======
+-- Train data preparation --
+Cleaning from service words...
+Important words were chosen.
+Vectorization...
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2100/2100 [02:12<00:00, 15.82it/s]
+Train data is prepared.
+-- Test data preparation --
+Cleaning from service words...
+Vectorization...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 531/531 [00:33<00:00, 16.00it/s]
+Validation data is prepared.
+
+-- Choose for MultinomialNB --
+alpha 0.1: 0.5311
+alpha 0.2: 0.5367
+alpha 0.5: 0.5424
+alpha 0.7: 0.5405
+alpha 1.0: 0.5461
+alpha 1.5: 0.5424
+alpha 2.0: 0.5367
+
+
+-- Choose for LinearSVC --
+stop: 0.001, reg: 0.0001, loss: squared_hinge    score: 0.5348
+stop: 0.001, reg: 0.001, loss: squared_hinge    score: 0.548
+stop: 0.001, reg: 0.01, loss: squared_hinge    score: 0.5593
+stop: 0.001, reg: 0.1, loss: squared_hinge    score: 0.5198
+stop: 0.001, reg: 0.5, loss: squared_hinge    score: 0.5198
+stop: 0.0001, reg: 0.0001, loss: squared_hinge    score: 0.5348
+stop: 0.0001, reg: 0.001, loss: squared_hinge    score: 0.548
+stop: 0.0001, reg: 0.01, loss: squared_hinge    score: 0.5593
+stop: 0.0001, reg: 0.1, loss: squared_hinge    score: 0.5198
+stop: 0.0001, reg: 0.5, loss: squared_hinge    score: 0.5198
+stop: 0.001, reg: 0.0001, loss: hinge    score: 0.533
+stop: 0.001, reg: 0.001, loss: hinge    score: 0.533
+stop: 0.001, reg: 0.01, loss: hinge    score: 0.5405
+stop: 0.001, reg: 0.1, loss: hinge    score: 0.5273
+stop: 0.001, reg: 0.5, loss: hinge    score: 0.4991
+stop: 0.0001, reg: 0.0001, loss: hinge    score: 0.533
+stop: 0.0001, reg: 0.001, loss: hinge    score: 0.533
+stop: 0.0001, reg: 0.01, loss: hinge    score: 0.5405
+stop: 0.0001, reg: 0.1, loss: hinge    score: 0.5273
+stop: 0.0001, reg: 0.5, loss: hinge    score: 0.4991
+
+
+-- Choose for DecisionTreeClassifier --
+crit: gini, depth: 30, leaf: 1,     score: 0.3955
+crit: gini, depth: 30, leaf: 2,     score: 0.3823
+crit: gini, depth: 50, leaf: 1,     score: 0.3785
+crit: gini, depth: 50, leaf: 2,     score: 0.3898
+crit: gini, depth: 100, leaf: 1,     score: 0.3785
+crit: gini, depth: 100, leaf: 2,     score: 0.3898
+crit: gini, depth: 200, leaf: 1,     score: 0.3785
+crit: gini, depth: 200, leaf: 2,     score: 0.3898
+crit: entropy, depth: 30, leaf: 1,     score: 0.3861
+crit: entropy, depth: 30, leaf: 2,     score: 0.3955
+crit: entropy, depth: 50, leaf: 1,     score: 0.3672
+crit: entropy, depth: 50, leaf: 2,     score: 0.3804
+crit: entropy, depth: 100, leaf: 1,     score: 0.3672
+crit: entropy, depth: 100, leaf: 2,     score: 0.3804
+crit: entropy, depth: 200, leaf: 1,     score: 0.3672
+crit: entropy, depth: 200, leaf: 2,     score: 0.3804
+
+
+-- Choose for MLPClassifier --
+layer: (2000, 400), alpha: 1e-06,   score: 0.5028
+layer: (2000, 400), alpha: 1e-05,   score: 0.5047
+layer: (2000, 400), alpha: 0.0001,   score: 0.5028
+layer: (1000, 100), alpha: 1e-06,   score: 0.4878
+layer: (1000, 100), alpha: 1e-05,   score: 0.4878
+layer: (1000, 100), alpha: 0.0001,   score: 0.4953
+layer: (2000, 400, 50), alpha: 1e-06,   score: 0.5141
+layer: (2000, 400, 50), alpha: 1e-05,   score: 0.5217
+layer: (2000, 400, 50), alpha: 0.0001,   score: 0.5198
+
